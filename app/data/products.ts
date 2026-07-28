@@ -27,7 +27,7 @@ export const products: Product[] = [
     category: "Mesas",
     description: "Mesa extensible en roble macizo, acabado natural satinado. Capacidad para 6 a 10 comensales.",
     price: 42900,
-    image: "/images/mesa.jpg",
+    image: "/images/mesa.svg",
   },
   {
     id: "silla-eames-madera",
@@ -35,7 +35,7 @@ export const products: Product[] = [
     category: "Sillas",
     description: "Silla de diseño escandinavo en madera de haya con asiento ergonómico.",
     price: 7850,
-    image: "/images/silla.jpg",
+    image: "/images/silla.svg",
   },
   {
     id: "escritorio-nordico",
@@ -43,7 +43,7 @@ export const products: Product[] = [
     category: "Escritorios",
     description: "Escritorio con cajonera integrada, patas de roble y tapa de nogal.",
     price: 35600,
-    image: "/images/escritorio.jpg",
+    image: "/images/escritorio.svg",
   },
   {
     id: "placar-corrido",
@@ -51,7 +51,7 @@ export const products: Product[] = [
     category: "Placares",
     description: "Placar de tres cuerpos con frente de madera maciza y correderas de aluminio anodizado.",
     price: 68900,
-    image: "/images/placar.jpg",
+    image: "/images/placar.svg",
   },
   {
     id: "cocina-isla",
@@ -59,7 +59,7 @@ export const products: Product[] = [
     category: "Cocina",
     description: "Isla central con mesada de roble, estantes abiertos y cajones de guías soft-close.",
     price: 52300,
-    image: "/images/cocina.jpg",
+    image: "/images/cocina.svg",
   },
   {
     id: "rack-tv-nogal",
@@ -67,7 +67,7 @@ export const products: Product[] = [
     category: "Racks",
     description: "Rack flotante para TV hasta 65 pulgadas, con compartimentos ocultos para cables.",
     price: 28700,
-    image: "/images/rack.jpg",
+    image: "/images/rack.svg",
   },
   {
     id: "biblioteca-alta",
@@ -75,7 +75,7 @@ export const products: Product[] = [
     category: "Bibliotecas",
     description: "Biblioteca de piso a techo con cinco estantes regulables y escalera móvil.",
     price: 45600,
-    image: "/images/biblioteca.jpg",
+    image: "/images/biblioteca.svg",
   },
   {
     id: "mesa-luz-minimal",
@@ -83,7 +83,7 @@ export const products: Product[] = [
     category: "Dormitorio",
     description: "Mesa de luz de una sola pieza en roble, con cajón oculto y base flotante.",
     price: 12400,
-    image: "/images/mesaluz.jpg",
+    image: "/images/mesaluz.svg",
   },
   {
     id: "cama-king-encino",
@@ -91,7 +91,7 @@ export const products: Product[] = [
     category: "Dormitorio",
     description: "Cama king-size con respaldo tapizado en lino y estructura de encino sólido.",
     price: 57800,
-    image: "/images/cama.jpg",
+    image: "/images/cama.svg",
   },
   {
     id: "caballete-arte",
@@ -99,7 +99,7 @@ export const products: Product[] = [
     category: "A medida",
     description: "Caballete plegable de haya con regulación de altura y apoyabrazos de cuero.",
     price: 15600,
-    image: "/images/caballete.jpg",
+    image: "/images/caballete.svg",
   },
   {
     id: "matera-eucalipto",
@@ -107,7 +107,7 @@ export const products: Product[] = [
     category: "A medida",
     description: "Matera con divisores para macetas y compartimento para herramientas de jardín.",
     price: 8900,
-    image: "/images/matera.jpg",
+    image: "/images/matera.svg",
   },
   {
     id: "pizarra-madera",
@@ -115,7 +115,7 @@ export const products: Product[] = [
     category: "A medida",
     description: "Pizarra de doble cara con marco de roble, ideal para restaurantes y cafeterías.",
     price: 11200,
-    image: "/images/pizarra.jpg",
+    image: "/images/pizarra.svg",
   },
 ];
 
