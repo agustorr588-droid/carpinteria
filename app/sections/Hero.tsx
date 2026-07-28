@@ -21,32 +21,31 @@ export function Hero() {
       id="inicio"
       className="relative min-h-screen flex flex-col justify-end overflow-hidden bg-[#f6f1e7]"
     >
-      {/* Wood-grain background pattern */}
-      <div className="absolute inset-0 z-0">
-        <div
-          className="absolute inset-0 opacity-[0.08]"
-          style={{
-            backgroundImage: `repeating-linear-gradient(
-              90deg,
-              #8b5e3c 0px,
-              #8b5e3c 1px,
-              transparent 1px,
-              transparent 60px
-            ), repeating-linear-gradient(
-              0deg,
-              #a0704e 0px,
-              #a0704e 1px,
-              transparent 1px,
-              transparent 60px
-            )`,
-          }}
+      {/* Full-screen background video */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
+        className="fixed inset-0 w-full h-full object-cover z-0"
+        poster=""
+        aria-label="Video de fondo de papelería artesanal"
+      >
+        <source
+          src="https://zxdefgavgwfxastwmmjm.supabase.co/storage/v1/object/public/assets/plume.mp4"
+          type="video/mp4"
         />
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#e8e0d6] to-transparent opacity-60" />
+      </video>
+
+      {/* Ivory readability wash + light scrim */}
+      <div className="absolute inset-0 z-[1] pointer-events-none">
+        <div className="absolute inset-0 bg-gradient-to-r from-[#f6f1e7]/90 via-[#f6f1e7]/40 to-transparent" />
         <div
-          className="absolute bottom-0 left-0 w-full h-1/2 pointer-events-none z-[1]"
+          className="absolute bottom-0 left-0 w-full h-1/2"
           style={{
             background:
-              "linear-gradient(to top, rgba(246,241,231,0.74) 0%, rgba(246,241,231,0.18) 38%, transparent 62%)",
+              "linear-gradient(to top, rgba(246,241,231,0.88) 0%, rgba(246,241,231,0.35) 42%, transparent 72%)",
           }}
         />
       </div>
