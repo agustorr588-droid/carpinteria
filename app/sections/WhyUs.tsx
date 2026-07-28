@@ -59,14 +59,14 @@ const advantages = [
 
 export function WhyUs() {
   return (
-    <section className="py-20 md:py-28 bg-white">
+    <section className="py-20 md:py-28 bg-[#f3efe9]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12">
         <SectionReveal>
           <div className="text-center mb-16">
-            <span className="text-[11px] tracking-[0.34em] uppercase text-[#c9a87c] font-medium block mb-3">
+            <span className="text-[11px] tracking-[0.34em] uppercase text-[#caa24f] font-medium block mb-3">
               ¿Por qué elegirnos?
             </span>
-            <h2 className="font-display text-4xl md:text-5xl font-light text-[#1c1917] mb-4">
+            <h2 className="font-display text-4xl md:text-5xl font-light text-[#24211c] mb-4">
               La diferencia está en los <span className="italic gild">detalles</span>
             </h2>
             <div className="hairline w-20 mx-auto" />
@@ -81,12 +81,12 @@ export function WhyUs() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}
               transition={{ duration: 0.6, delay: i * 0.08 }}
-              className="group p-6 rounded-2xl border border-[#1c1917]/5 bg-[#faf8f5] hover:bg-white hover:shadow-xl hover:border-[#c9a87c]/20 transition-all duration-500"
+              className="group p-6 rounded-2xl border border-[#24211c]/5 bg-[#f6f1e7] hover:bg-[#f3efe9] hover:shadow-xl hover:border-[#caa24f]/20 transition-all duration-500"
             >
-              <div className="w-12 h-12 rounded-xl bg-[#8b5e3c]/10 flex items-center justify-center mb-4 group-hover:bg-[#8b5e3c]/20 transition-colors">
-                <Icon size={22} className="text-[#8b5e3c]" strokeWidth={1.5} />
+              <div className="w-12 h-12 rounded-xl bg-[#caa24f]/10 flex items-center justify-center mb-4 group-hover:bg-[#caa24f]/20 transition-colors">
+                <Icon size={22} className="text-[#caa24f]" strokeWidth={1.5} />
               </div>
-              <h3 className="font-display text-xl text-[#1c1917] mb-2 leading-tight">
+              <h3 className="font-display text-xl text-[#24211c] mb-2 leading-tight">
                 {title}
               </h3>
               <p className="text-sm text-[#57534e] leading-relaxed">

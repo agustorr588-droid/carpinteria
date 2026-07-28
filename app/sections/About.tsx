@@ -17,7 +17,7 @@ export function About() {
   ];
 
   return (
-    <section id="nosotros" className="py-20 md:py-28 bg-[#faf8f5]">
+    <section id="nosotros" className="py-20 md:py-28 bg-[#f6f1e7]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left: visual placeholder */}
@@ -37,7 +37,7 @@ export function About() {
               />
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center">
-                  <span className="font-display text-8xl md:text-9xl text-[#8b5e3c]/20 font-light">
+                  <span className="font-display text-8xl md:text-9xl text-[#caa24f]/20 font-light">
                     {company.founded}
                   </span>
                   <p className="text-[#57534e] text-sm tracking-[0.2em] uppercase mt-2">
@@ -46,17 +46,17 @@ export function About() {
                 </div>
               </div>
               {/* Decorative border */}
-              <div className="absolute inset-4 border border-[#c9a87c]/40 rounded-xl pointer-events-none" />
+              <div className="absolute inset-4 border border-[#caa24f]/40 rounded-xl pointer-events-none" />
             </div>
           </SectionReveal>
 
           {/* Right: content */}
           <div>
             <SectionReveal>
-              <span className="text-[11px] tracking-[0.34em] uppercase text-[#c9a87c] font-medium block mb-3">
+              <span className="text-[11px] tracking-[0.34em] uppercase text-[#caa24f] font-medium block mb-3">
                 Sobre Nosotros
               </span>
-              <h2 className="font-display text-4xl md:text-5xl font-light text-[#1c1917] mb-6 leading-tight">
+              <h2 className="font-display text-4xl md:text-5xl font-light text-[#24211c] mb-6 leading-tight">
                 Tres generaciones de <span className="italic gild">pasión</span> por la madera
               </h2>
             </SectionReveal>
@@ -87,10 +87,10 @@ export function About() {
                   >
                     <Icon
                       size={24}
-                      className="mx-auto mb-2 text-[#c9a87c]"
+                      className="mx-auto mb-2 text-[#caa24f]"
                       strokeWidth={1.5}
                     />
-                    <p className="font-display text-2xl text-[#1c1917]">{value}</p>
+                    <p className="font-display text-2xl text-[#24211c]">{value}</p>
                     <p className="text-xs text-[#57534e] tracking-wide">{label}</p>
                   </motion.div>
                 ))}
@@ -99,7 +99,7 @@ export function About() {
 
             <SectionReveal delay={0.3}>
               <div className="mt-8">
-                <h3 className="font-medium text-sm tracking-[0.2em] uppercase text-[#c9a87c] mb-4">
+                <h3 className="font-medium text-sm tracking-[0.2em] uppercase text-[#caa24f] mb-4">
                   Nuestros Valores
                 </h3>
                 <ul className="space-y-3">
@@ -108,7 +108,7 @@ export function About() {
                       key={value}
                       className="flex items-start gap-3 text-[#57534e]"
                     >
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#8b5e3c] mt-2 shrink-0" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#caa24f] mt-2 shrink-0" />
                       <span>{value}</span>
                     </li>
                   ))}

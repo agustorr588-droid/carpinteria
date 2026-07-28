@@ -11,10 +11,10 @@ export function Testimonials() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12">
         <SectionReveal>
           <div className="text-center mb-16">
-            <span className="text-[11px] tracking-[0.34em] uppercase text-[#c9a87c] font-medium block mb-3">
+            <span className="text-[11px] tracking-[0.34em] uppercase text-[#caa24f] font-medium block mb-3">
               Testimonios
             </span>
-            <h2 className="font-display text-4xl md:text-5xl font-light text-[#1c1917] mb-4">
+            <h2 className="font-display text-4xl md:text-5xl font-light text-[#24211c] mb-4">
               Lo que dicen <span className="italic gild">nuestros clientes</span>
             </h2>
             <div className="hairline w-20 mx-auto" />
@@ -29,11 +29,11 @@ export function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}
               transition={{ duration: 0.6, delay: i * 0.1 }}
-              className="relative p-6 md:p-8 rounded-2xl bg-white border border-[#1c1917]/5 shadow-sm hover:shadow-lg transition-shadow duration-500"
+              className="relative p-6 md:p-8 rounded-2xl bg-[#f6f1e7] border border-[#24211c]/5 shadow-sm hover:shadow-lg transition-shadow duration-500"
             >
               <Quote
                 size={32}
-                className="text-[#c9a87c]/30 mb-4"
+                className="text-[#caa24f]/30 mb-4"
                 strokeWidth={1}
               />
               <p className="text-[#57534e] leading-relaxed mb-6 text-sm md:text-base">
@@ -46,14 +46,14 @@ export function Testimonials() {
                     size={14}
                     className={
                       ri < t.rating
-                        ? "text-[#c9a87c] fill-[#c9a87c]"
+                        ? "text-[#caa24f] fill-[#caa24f]"
                         : "text-[#e8e0d6]"
                     }
                   />
                 ))}
               </div>
-              <div className="border-t border-[#1c1917]/5 pt-4">
-                <p className="font-medium text-[#1c1917] text-sm">{t.name}</p>
+              <div className="border-t border-[#24211c]/5 pt-4">
+                <p className="font-medium text-[#24211c] text-sm">{t.name}</p>
                 <p className="text-xs text-[#57534e]">{t.role}</p>
               </div>
             </motion.div>

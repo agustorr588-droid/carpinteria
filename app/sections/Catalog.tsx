@@ -22,14 +22,14 @@ export function Catalog() {
   });
 
   return (
-    <section id="catalogo" className="py-20 md:py-28 bg-white">
+    <section id="catalogo" className="py-20 md:py-28 bg-[#f6f1e7]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12">
         <SectionReveal>
           <div className="text-center mb-12">
-            <span className="text-[11px] tracking-[0.34em] uppercase text-[#c9a87c] font-medium block mb-3">
+            <span className="text-[11px] tracking-[0.34em] uppercase text-[#caa24f] font-medium block mb-3">
               Nuestros Productos
             </span>
-            <h2 className="font-display text-4xl md:text-5xl font-light text-[#1c1917] mb-4">
+            <h2 className="font-display text-4xl md:text-5xl font-light text-[#24211c] mb-4">
               Catálogo de Muebles
             </h2>
             <div className="hairline w-20 mx-auto mb-6" />
@@ -51,7 +51,7 @@ export function Catalog() {
                 placeholder="Buscar muebles..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-10 pr-4 py-2.5 rounded-full border border-[#1c1917]/10 bg-[#faf8f5] text-sm focus:outline-none focus:ring-2 focus:ring-[#8b5e3c]/30 focus:border-[#8b5e3c]/30 transition-all"
+                className="w-full pl-10 pr-4 py-2.5 rounded-full border border-[#24211c]/10 bg-[#f6f1e7] text-sm focus:outline-none focus:ring-2 focus:ring-[#caa24f]/30 focus:border-[#caa24f]/30 transition-all"
                 aria-label="Buscar productos"
               />
             </div>
@@ -61,7 +61,7 @@ export function Catalog() {
               )}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-[#8b5e3c] text-[#faf8f5] px-5 py-2.5 text-sm font-medium hover:bg-[#6d4a2f] transition-colors"
+              className="inline-flex items-center gap-2 rounded-full bg-[#e8c87a] text-[#24211c] px-5 py-2.5 text-sm font-medium hover:bg-[#efd692] transition-colors"
             >
               <Phone size={16} />
               Consultar por WhatsApp
@@ -78,7 +78,7 @@ export function Catalog() {
                 onClick={() => setActiveCategory(cat)}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
                   activeCategory === cat
-                    ? "bg-[#1c1917] text-[#faf8f5]"
+                    ? "bg-[#24211c] text-[#f6f1e7]"
                     : "bg-[#f3efe9] text-[#57534e] hover:bg-[#e8e0d6]"
                 }`}
                 aria-pressed={activeCategory === cat}
