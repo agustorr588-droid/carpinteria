@@ -22,18 +22,18 @@ export function Catalog() {
   });
 
   return (
-    <section id="catalogo" className="py-20 md:py-28 bg-[#f6f1e7]">
+    <section id="catalogo" className="py-20 md:py-28 bg-[#050505]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12">
         <SectionReveal>
           <div className="text-center mb-12">
             <span className="text-[11px] tracking-[0.34em] uppercase text-[#caa24f] font-medium block mb-3">
               Nuestros Productos
             </span>
-            <h2 className="font-display text-4xl md:text-5xl font-light text-[#24211c] mb-4">
+            <h2 className="font-display text-4xl md:text-5xl font-light text-[#f3efe9] mb-4">
               Catálogo de Muebles
             </h2>
             <div className="hairline w-20 mx-auto mb-6" />
-            <p className="text-[#57534e] max-w-2xl mx-auto leading-relaxed">
+            <p className="text-[#a8a29e] max-w-2xl mx-auto leading-relaxed">
               Cada pieza está diseñada y fabricada en nuestro taller de
               Montevideo. Explorá nuestra colección o consultá por muebles a
               medida.
@@ -45,13 +45,13 @@ export function Catalog() {
         <SectionReveal delay={0.1}>
           <div className="flex flex-col sm:flex-row gap-4 mb-10 items-center justify-between">
             <div className="relative w-full sm:w-72">
-              <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-[#57534e]" />
+              <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-[#a8a29e]" />
               <input
                 type="text"
                 placeholder="Buscar muebles..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-10 pr-4 py-2.5 rounded-full border border-[#24211c]/10 bg-[#f6f1e7] text-sm focus:outline-none focus:ring-2 focus:ring-[#caa24f]/30 focus:border-[#caa24f]/30 transition-all"
+                className="w-full pl-10 pr-4 py-2.5 rounded-full border border-[#f3efe9]/10 bg-[#050505] text-sm focus:outline-none focus:ring-2 focus:ring-[#caa24f]/30 focus:border-[#caa24f]/30 transition-all"
                 aria-label="Buscar productos"
               />
             </div>
@@ -61,7 +61,7 @@ export function Catalog() {
               )}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-[#e8c87a] text-[#24211c] px-5 py-2.5 text-sm font-medium hover:bg-[#efd692] transition-colors"
+              className="inline-flex items-center gap-2 rounded-full bg-[#e8c87a] text-[#050505] px-5 py-2.5 text-sm font-medium hover:bg-[#efd692] transition-colors"
             >
               <Phone size={16} />
               Consultar por WhatsApp
@@ -78,8 +78,8 @@ export function Catalog() {
                 onClick={() => setActiveCategory(cat)}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
                   activeCategory === cat
-                    ? "bg-[#24211c] text-[#f6f1e7]"
-                    : "bg-[#f3efe9] text-[#57534e] hover:bg-[#e8e0d6]"
+                    ? "bg-[#f3efe9] text-[#050505]"
+                    : "bg-[#1a1a1a] text-[#a8a29e] hover:bg-[#262626]"
                 }`}
                 aria-pressed={activeCategory === cat}
               >
@@ -107,13 +107,13 @@ export function Catalog() {
 
         {filtered.length === 0 && (
           <div className="text-center py-16">
-            <p className="text-[#57534e]">No se encontraron productos.</p>
+            <p className="text-[#a8a29e]">No se encontraron productos.</p>
             <button
               onClick={() => {
                 setActiveCategory("Todas");
                 setSearchQuery("");
               }}
-              className="mt-4 text-sm text-[#8b5e3c] hover:underline"
+              className="mt-4 text-sm text-[#caa24f] hover:underline"
             >
               Limpiar filtros
             </button>

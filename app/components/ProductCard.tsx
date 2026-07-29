@@ -23,9 +23,9 @@ export function ProductCard({ product, index }: ProductCardProps) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-40px" }}
       transition={{ duration: 0.6, delay: index * 0.08, ease: "easeOut" }}
-      className="group bg-[#f6f1e7] rounded-2xl overflow-hidden border border-[#24211c]/5 shadow-sm hover:shadow-xl transition-all duration-500"
+      className="group bg-[#0a0a0a] rounded-2xl overflow-hidden border border-[#f3efe9]/5 shadow-sm hover:shadow-xl hover:shadow-[#caa24f]/10 transition-all duration-500"
     >
-      <div className="relative aspect-[4/3] overflow-hidden bg-[#f3efe9]">
+      <div className="relative aspect-[4/3] overflow-hidden bg-[#1a1a1a]">
         <Image
           src={product.image}
           alt={product.name}
@@ -40,10 +40,10 @@ export function ProductCard({ product, index }: ProductCardProps) {
         <p className="text-[10px] tracking-[0.3em] uppercase text-[#caa24f] font-medium mb-2">
           {product.category}
         </p>
-        <h3 className="font-display text-xl text-[#24211c] mb-2 leading-tight">
+        <h3 className="font-display text-xl text-[#f3efe9] mb-2 leading-tight">
           {product.name}
         </h3>
-        <p className="text-sm text-[#57534e] leading-relaxed mb-4 line-clamp-2">
+        <p className="text-sm text-[#a8a29e] leading-relaxed mb-4 line-clamp-2">
           {product.description}
         </p>
         <div className="flex items-center justify-between">

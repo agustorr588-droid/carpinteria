@@ -9,16 +9,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#f6f1e7",
-        "background-alt": "#f3efe9",
-        foreground: "#24211c",
-        "foreground-muted": "#57534e",
-        accent: "#8b5e3c",
-        "accent-light": "#a0704e",
+        background: "#050505",
+        "background-alt": "#0a0a0a",
+        foreground: "#f3efe9",
+        "foreground-muted": "#a8a29e",
+        accent: "#caa24f",
+        "accent-light": "#e8c87a",
         "accent-gold": "#caa24f",
         "accent-gold-light": "#e8c87a",
-        ink: "#24211c",
-        ivory: "#f6f1e7",
+        ink: "#f3efe9",
+        ivory: "#050505",
       },
       fontFamily: {
         display: ["var(--font-cormorant)", "serif"],

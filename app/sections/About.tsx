@@ -17,12 +17,12 @@ export function About() {
   ];
 
   return (
-    <section id="nosotros" className="py-20 md:py-28 bg-[#f6f1e7]">
+    <section id="nosotros" className="py-20 md:py-28 bg-[#050505]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left: visual placeholder */}
           <SectionReveal>
-            <div className="relative aspect-[4/5] rounded-2xl overflow-hidden bg-[#e8e0d6]">
+            <div className="relative aspect-[4/5] rounded-2xl overflow-hidden bg-[#1a1a1a]">
               <div
                 className="absolute inset-0 opacity-20"
                 style={{
@@ -37,10 +37,10 @@ export function About() {
               />
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center">
-                  <span className="font-display text-8xl md:text-9xl text-[#caa24f]/20 font-light">
+                  <span className="font-display text-8xl md:text-9xl text-[#caa24f]/15 font-light">
                     {company.founded}
                   </span>
-                  <p className="text-[#57534e] text-sm tracking-[0.2em] uppercase mt-2">
+                  <p className="text-[#a8a29e] text-sm tracking-[0.2em] uppercase mt-2">
                     Fundación
                   </p>
                 </div>
@@ -56,7 +56,7 @@ export function About() {
               <span className="text-[11px] tracking-[0.34em] uppercase text-[#caa24f] font-medium block mb-3">
                 Sobre Nosotros
               </span>
-              <h2 className="font-display text-4xl md:text-5xl font-light text-[#24211c] mb-6 leading-tight">
+              <h2 className="font-display text-4xl md:text-5xl font-light text-[#f3efe9] mb-6 leading-tight">
                 Tres generaciones de <span className="italic gild">pasión</span> por la madera
               </h2>
             </SectionReveal>
@@ -66,7 +66,7 @@ export function About() {
                 {company.history.story.split("\n\n").map((paragraph, i) => (
                   <p
                     key={i}
-                    className="text-[#57534e] leading-relaxed mb-4 text-base"
+                    className="text-[#a8a29e] leading-relaxed mb-4 text-base"
                   >
                     {paragraph}
                   </p>
@@ -90,8 +90,8 @@ export function About() {
                       className="mx-auto mb-2 text-[#caa24f]"
                       strokeWidth={1.5}
                     />
-                    <p className="font-display text-2xl text-[#24211c]">{value}</p>
-                    <p className="text-xs text-[#57534e] tracking-wide">{label}</p>
+                    <p className="font-display text-2xl text-[#f3efe9]">{value}</p>
+                    <p className="text-xs text-[#a8a29e] tracking-wide">{label}</p>
                   </motion.div>
                 ))}
               </div>
@@ -106,7 +106,7 @@ export function About() {
                   {company.history.values.map((value) => (
                     <li
                       key={value}
-                      className="flex items-start gap-3 text-[#57534e]"
+                      className="flex items-start gap-3 text-[#a8a29e]"
                     >
                       <span className="w-1.5 h-1.5 rounded-full bg-[#caa24f] mt-2 shrink-0" />
                       <span>{value}</span>
