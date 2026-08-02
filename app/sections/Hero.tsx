@@ -23,7 +23,7 @@ export function Hero() {
       className="relative h-screen bg-[#050505]"
     >
       {/* Full-viewport video container */}
-      <div className="sticky top-0 h-screen overflow-hidden">
+      <div className="sticky top-0 h-screen overflow-hidden bg-[#050505]">
         {/* Full-viewport background video */}
         <motion.div
           className="absolute inset-0 z-0"
@@ -34,7 +34,7 @@ export function Hero() {
             autoPlay
             playsInline
             preload="auto"
-            className="w-full h-full object-cover"
+            className="block w-full h-full object-cover"
             aria-label="Video de carpintería artesanal"
           >
             <source
@@ -49,7 +49,7 @@ export function Hero() {
           className="absolute inset-0 z-[1] pointer-events-none"
           style={{
             background:
-              "linear-gradient(to bottom, rgba(5,5,5,0.5) 0%, rgba(5,5,5,0.15) 35%, rgba(5,5,5,0.55) 70%, rgba(5,5,5,0.9) 100%)",
+              "linear-gradient(to bottom, rgba(5,5,5,0.5) 0%, rgba(5,5,5,0.12) 35%, rgba(5,5,5,0.58) 68%, rgba(5,5,5,0.94) 88%, #050505 100%)",
           }}
         />
 
