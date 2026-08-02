@@ -17,6 +17,7 @@ export function ProductCard({ product, index }: ProductCardProps) {
   const waUrl = `https://wa.me/${company.contact.phoneRaw}?text=${encodeURIComponent(
     `Hola, quisiera consultar por el producto: ${product.name}`
   )}`;
+  const isRemoteImage = product.image.startsWith("http");
 
   return (
     <motion.div
@@ -28,14 +29,22 @@ export function ProductCard({ product, index }: ProductCardProps) {
     >
       <Link href={`/catalogo/${product.id}`} className="block">
         <div className="relative aspect-[4/3] overflow-hidden bg-[#1a1a1a]">
-          <Image
-            src={product.image}
-            alt={product.name}
-            fill
-            className="object-cover group-hover:scale-105 transition-transform duration-700"
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-            loading="lazy"
-          />
+          {isRemoteImage ? (
+            <img
+              src={product.image}
+              alt={product.name}
+              className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-700"
+            />
+          ) : (
+            <Image
+              src={product.image}
+              alt={product.name}
+              fill
+              className="object-cover group-hover:scale-105 transition-transform duration-700"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              loading="lazy"
+            />
+          )}
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
         </div>
       </Link>
