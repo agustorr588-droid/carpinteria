@@ -83,7 +83,7 @@ export const products: Product[] = [
     category: "Dormitorio",
     description: "Mesa de luz de una sola pieza en roble, con cajón oculto y base flotante.",
     price: 12400,
-    image: "https://images.unsplash.com/photo-1616627989532-6a7c7b5a98f4?auto=format&fit=crop&w=900&q=85",
+    image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=900&q=85",
   },
   {
     id: "cama-king-encino",
