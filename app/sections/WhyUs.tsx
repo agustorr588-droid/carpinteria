@@ -81,10 +81,10 @@ export function WhyUs() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}
               transition={{ duration: 0.6, delay: i * 0.08 }}
-              className="group p-6 rounded-2xl border border-[#f3efe9]/5 bg-[#050505] hover:bg-[#0a0a0a] hover:shadow-xl hover:border-[#caa24f]/20 transition-all duration-500"
+              className="group micro-lift p-6 rounded-2xl border border-[#f3efe9]/5 bg-[#050505] hover:bg-[#0a0a0a] hover:shadow-xl hover:border-[#caa24f]/20 transition-all duration-500"
             >
               <div className="w-12 h-12 rounded-xl bg-[#caa24f]/10 flex items-center justify-center mb-4 group-hover:bg-[#caa24f]/20 transition-colors">
-                <Icon size={22} className="text-[#caa24f]" strokeWidth={1.5} />
+                <Icon size={22} className="icon-breathe text-[#caa24f]" strokeWidth={1.5} />
               </div>
               <h3 className="font-display text-xl text-[#f3efe9] mb-2 leading-tight">
                 {title}

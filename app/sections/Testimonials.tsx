@@ -29,11 +29,11 @@ export function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}
               transition={{ duration: 0.6, delay: i * 0.1 }}
-              className="relative p-6 md:p-8 rounded-2xl bg-[#0a0a0a] border border-[#f3efe9]/5 shadow-sm hover:shadow-lg transition-shadow duration-500"
+              className="group micro-lift relative p-6 md:p-8 rounded-2xl bg-[#0a0a0a] border border-[#f3efe9]/5 shadow-sm hover:shadow-lg transition-shadow duration-500"
             >
               <Quote
                 size={32}
-                className="text-[#caa24f]/30 mb-4"
+                className="icon-breathe text-[#caa24f]/30 mb-4"
                 strokeWidth={1}
               />
               <p className="text-[#a8a29e] leading-relaxed mb-6 text-sm md:text-base">

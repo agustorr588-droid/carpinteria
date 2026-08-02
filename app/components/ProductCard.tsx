@@ -25,7 +25,7 @@ export function ProductCard({ product, index }: ProductCardProps) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-40px" }}
       transition={{ duration: 0.6, delay: index * 0.08, ease: "easeOut" }}
-      className="group bg-[#0a0a0a] rounded-2xl overflow-hidden border border-[#f3efe9]/5 shadow-sm hover:shadow-xl hover:shadow-[#caa24f]/10 transition-all duration-500"
+      className="group micro-lift bg-[#0a0a0a] rounded-2xl overflow-hidden border border-[#f3efe9]/5 shadow-sm hover:shadow-xl hover:shadow-[#caa24f]/10 transition-all duration-500"
     >
       <Link href={`/catalogo/${product.id}`} className="block">
         <div className="relative aspect-[4/3] overflow-hidden bg-[#1a1a1a]">

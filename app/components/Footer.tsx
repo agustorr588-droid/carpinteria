@@ -24,7 +24,7 @@ export function Footer() {
                 href={company.social.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full border border-[#f3efe9]/20 flex items-center justify-center hover:border-[#caa24f] hover:text-[#caa24f] transition-colors"
+                className="micro-lift w-10 h-10 rounded-full border border-[#f3efe9]/20 flex items-center justify-center hover:border-[#caa24f] hover:text-[#caa24f] transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram size={18} />
@@ -33,7 +33,7 @@ export function Footer() {
                 href={company.social.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full border border-[#f3efe9]/20 flex items-center justify-center hover:border-[#caa24f] hover:text-[#caa24f] transition-colors"
+                className="micro-lift w-10 h-10 rounded-full border border-[#f3efe9]/20 flex items-center justify-center hover:border-[#caa24f] hover:text-[#caa24f] transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook size={18} />
@@ -50,7 +50,7 @@ export function Footer() {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="text-sm text-[#f3efe9]/70 hover:text-[#f3efe9] transition-colors"
+                    className="link-underline text-sm text-[#f3efe9]/70 hover:text-[#f3efe9] transition-colors"
                   >
                     {link.label}
                   </a>
@@ -68,7 +68,7 @@ export function Footer() {
                 <li key={product}>
                   <a
                     href="#catalogo"
-                    className="text-sm text-[#f3efe9]/70 hover:text-[#f3efe9] transition-colors"
+                    className="link-underline text-sm text-[#f3efe9]/70 hover:text-[#f3efe9] transition-colors"
                   >
                     {product}
                   </a>

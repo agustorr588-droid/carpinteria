@@ -45,7 +45,7 @@ export function Navbar() {
               <Animated key={link.href} delay={navStagger[i] ?? 100}>
                 <a
                   href={link.href}
-                  className="text-sm text-[#f3efe9]/70 hover:text-[#f3efe9] transition-colors font-medium"
+                  className="link-underline text-sm text-[#f3efe9]/70 hover:text-[#f3efe9] transition-colors font-medium"
                 >
                   {link.label}
                 </a>
@@ -61,7 +61,7 @@ export function Navbar() {
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden md:inline-flex items-center gap-2 rounded-full liquid-glass px-5 py-2 text-sm font-medium text-[#f3efe9] hover:bg-white/10 transition-colors"
+                className="micro-lift hidden md:inline-flex items-center gap-2 rounded-full liquid-glass px-5 py-2 text-sm font-medium text-[#f3efe9] hover:bg-white/10 transition-colors"
                 aria-label="Contactar por WhatsApp"
               >
                 <Phone size={16} />

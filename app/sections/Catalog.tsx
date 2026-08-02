@@ -61,7 +61,7 @@ export function Catalog() {
               )}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-[#e8c87a] text-[#050505] px-5 py-2.5 text-sm font-medium hover:bg-[#efd692] transition-colors"
+              className="micro-lift inline-flex items-center gap-2 rounded-full bg-[#e8c87a] text-[#050505] px-5 py-2.5 text-sm font-medium hover:bg-[#efd692] transition-colors"
             >
               <Phone size={16} />
               Consultar por WhatsApp
@@ -76,7 +76,7 @@ export function Catalog() {
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
-                className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                className={`micro-lift px-4 py-2 rounded-full text-sm font-medium transition-all ${
                   activeCategory === cat
                     ? "bg-[#f3efe9] text-[#050505]"
                     : "bg-[#1a1a1a] text-[#a8a29e] hover:bg-[#262626]"
