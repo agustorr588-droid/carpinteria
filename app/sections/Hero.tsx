@@ -1,11 +1,10 @@
 "use client";
 
-import { useRef } from "react";
 import { company } from "@/app/data/company";
 import { ArrowRight, TreePine, Hammer, Ruler, PenTool } from "lucide-react";
 import { Animated } from "@/app/components/Animated";
 import { useReducedMotion } from "@/app/hooks/useReducedMotion";
-import { useScroll, useMotionValueEvent, useTransform, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const metadata = [
   { icon: TreePine, label: "Madera Sustentable" },
@@ -17,47 +16,22 @@ export function Hero() {
   const year = new Date().getFullYear();
   const years = year - company.founded;
   const reduced = useReducedMotion();
-  const sectionRef = useRef<HTMLElement>(null);
-  const videoRef = useRef<HTMLVideoElement>(null);
-
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start start", "end start"],
-  });
-
-  const textOpacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
-  const textY = useTransform(scrollYProgress, [0, 0.5], [0, -60]);
-  const videoScale = useTransform(scrollYProgress, [0, 1], [1, 1.15]);
-
-  useMotionValueEvent(scrollYProgress, "change", (latest) => {
-    const video = videoRef.current;
-    if (!video) return;
-    if (reduced) return;
-    if (video.readyState < 2) return;
-    const duration = video.duration || 0;
-    if (duration > 0) {
-      video.currentTime = Math.min(latest * duration, duration - 0.01);
-    }
-  });
 
   return (
     <section
       id="inicio"
-      ref={sectionRef}
-      className="relative h-[200vh] bg-[#050505]"
+      className="relative h-screen bg-[#050505]"
     >
-      {/* Sticky full-viewport video container */}
+      {/* Full-viewport video container */}
       <div className="sticky top-0 h-screen overflow-hidden">
         {/* Full-viewport background video */}
         <motion.div
           className="absolute inset-0 z-0"
-          style={reduced ? undefined : { scale: videoScale }}
         >
           <video
-            ref={videoRef}
             muted
-            loop={reduced}
-            autoPlay={reduced}
+            loop
+            autoPlay
             playsInline
             preload="auto"
             className="w-full h-full object-cover"
@@ -88,10 +62,9 @@ export function Hero() {
           }}
         />
 
-        {/* Hero text — fades out on scroll */}
+        {/* Hero text */}
         <motion.div
           className="absolute inset-0 z-10 flex flex-col justify-end px-4 sm:px-6 md:px-12 pb-12 md:pb-20 pt-32 max-w-7xl mx-auto w-full"
-          style={reduced ? undefined : { opacity: textOpacity, y: textY }}
         >
           {/* Eyebrow */}
           <Animated delay={300} className="mb-4">
