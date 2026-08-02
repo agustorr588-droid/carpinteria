@@ -90,7 +90,6 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased">
-        <div className="paper-grain" aria-hidden="true" />
         <Navbar />
         <main>{children}</main>
         <Footer />

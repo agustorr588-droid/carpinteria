@@ -147,10 +147,6 @@
     pointer-events: none;
   }
 
-  .paper-grain {
-    display: none;
-  }
-
   .animate-blur-fade-up {
     opacity: 0;
     animation: blurFadeUp 1.1s ease-out forwards;
@@ -173,9 +169,6 @@
     filter: blur(0);
     transform: translateY(0) scaleX(1);
     animation: none;
-  }
-  .paper-grain {
-    display: none;
   }
   .micro-lift,
   .micro-lift:hover,
